@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:furniture": "node dist/furniture/server/server.mjs"
+    "serve:ssr:furniture": "node dist/furniture/server/server.mjs",
+    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/furniture/browser"
   },
   "private": true,
   "dependencies": {
