@@ -6,11 +6,7 @@ scrollbar-width: none;
 }
 
 
-body{
-    scrollbar-width: none;
-        /* Firefox */
-        -ms-overflow-style: none;
-}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -31,6 +27,12 @@ body{
     --font-secondary: 'Arial', sans-serif;
 }
 
+.navbar{
+position: sticky;
+top: 0;
+background-color: white;
+z-index: 99999;
+}
 nav {
     background-color: white !important;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 10px -20px;
@@ -202,13 +204,30 @@ font-family: system-ui, sans-serif;
 
     .chat-container-1 {
 
-        top: 104px !important;
+        top: 74px !important;
     }
 
     .chat-container {
 
-        transform: translate(18%, 100%) !important;
+            transform: translate(9%, -40%) !important;
     }
+        .chat-container-2 {
+            display: flex;
+            align-items: center;
+            max-width: 300px;
+            position: absolute;
+            right: 26px !important;
+            bottom: 81px !important;
+        }
+
+        .carees h2{
+            display: none;
+
+        }
+                 .carees p {
+                     display: none;
+        
+                 }
 
     .chat-container-3 {
 
@@ -569,12 +588,12 @@ color: #f27c0f !important;
 }
 
 
-.active {
+.navbar-nav.active {
     color: #f27c0f !important;
     position: relative;
 }
 
-.active::after {
+.navbar-nav.active::after {
     content: "";
     display: block;
     width: 100%;
@@ -1128,7 +1147,7 @@ input {
 
 .pricing-card {
     background: white;
-    width: 280px;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -1205,6 +1224,52 @@ input {
     color: #6A00F4;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: rgb(0, 0, 0);
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+        width: 100%;
+        transition: left 0.3s ease;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
 /* Responsive */
 @media (max-width: 900px) {
     .pricing-container {
@@ -1212,7 +1277,6 @@ input {
     }
 
     .pricing-card {
-        width: 90%;
         margin-bottom: 20px;
     }
 
@@ -1289,6 +1353,10 @@ input {
 }
 
 @media (max-width: 768px) {
+    .home {
+            background-position: right !important;
+
+        }
     .mission .card {
         width: 100% !important;
         margin-top: 20px !important;

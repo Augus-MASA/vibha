@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg  sticky-top W-100  " data-aos="zoom-out" data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
+<nav class="navbar navbar-expand-lg  sticky-top W-100  ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <div class="home-logo">
@@ -10,18 +9,15 @@
             </div>
         </a>
         <button class="navbar-toggler menu-button" type="button" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation" style="z-index: 99999999999;">
-            <label class="hamburger" (click)="toggleNavbar()">
-                <input (click)="toggleNavbar()" type="checkbox" />
-                <svg viewBox="0 0 32 32">
-                    <path (click)="toggleNavbar()" class="line line-top-bottom"
-                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                    </path>
-                    <path class="line" d="M7 16 27 16"></path>
-                </svg>
-            </label>
+            aria-expanded="false" aria-label="Toggle navigation" style="z-index: 99999999999;" (click)="toggleNavbar()">
+        <div class="hamburger" (click)="toggleNavbar()" [ngClass]="{ 'active': isNavbarCollapsed }">
+            <span class="bar" (click)="toggleNavbar()"></span>
+            <span class="bar" (click)="toggleNavbar()"></span>
+            <span class="bar" (click)="toggleNavbar()"></span>
+        </div>
 
         </button>
+        
         <div class="collapse  d-flex justify-content-center  navbar-collapse   W-100 "
             [ngClass]="{'show ': isNavbarCollapsed, 'd-none ': !isNavbarCollapsed,}" id="navbarNavAltMarkup">
             <div class="navbar-nav w-50">
@@ -101,7 +97,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 ">
-                <div class="about-content" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                <div class="about-content" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <p class="element">
                         Vibha Corporation & Co
@@ -400,7 +396,7 @@
     </div>
     <div class="container">
         <div class="d-flex align-items-center justify-content-between row  ">
-            <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="card mission">
                     <div class="icon">🎯</div>
@@ -409,7 +405,7 @@
                     <div class="number">01</div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="card vision">
                     <div class="icon">💡</div>
@@ -418,7 +414,7 @@
                     <div class="number">02</div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="card values">
                     <div class="icon">🤝</div>
@@ -437,7 +433,7 @@
             <h3>Gallery</h3>
         </div>
         <div class="row" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img
@@ -450,7 +446,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img src="https://i.pinimg.com/736x/a2/50/41/a25041b2e91ef5a53ee330f88eb1d496.jpg" />
@@ -461,7 +457,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
 
@@ -473,7 +469,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
 
@@ -485,7 +481,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img
@@ -497,7 +493,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img
@@ -509,7 +505,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img
@@ -521,7 +517,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
                     <img
@@ -533,7 +529,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-4 mt-4 col-md-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="port">
 
@@ -552,7 +548,7 @@
 </section>
 
 
-<section id="careers" class="pt-5" style="scroll-margin-top: 40px;" data-aos="fade-up" data-aos="flip-right"
+<section id="careers" class="pt-5" style="scroll-margin-top: 40px;" data-aos="fade-up" data-aos="fade-up"
     data-aos-easing="ease-out-cubic" data-aos-duration="2000">
     <div class="text-center py-5 common-header ">
         <h3>Careers</h3>
@@ -578,7 +574,7 @@
     </div>
     <div class="container">
         <div class="d-flex justify-content-center row">
-            <div class="col-12 col-lg-5" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <div class="form-container ">
                     <div class="form-header">Become a partner</div>
@@ -601,7 +597,7 @@
 
                 </div>
             </div>
-            <div class="col-12 col-lg-7" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="content d-flex justify-content-center w-100">
                     <ul>
                         <li>Use prebuilt templates to easily create a web form to capture partner applications</li>
@@ -682,7 +678,7 @@
         <div class="container">
             <div class=" row">
 
-                <div class="col-12 col-lg-4" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                <div class="col-12 col-lg-4 pb-3" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <div class="blog-card">
                         <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-3.jpg" alt="Blog 1">
@@ -695,7 +691,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                <div class="col-12 col-lg-4 pb-3" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <div class="blog-card">
                         <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-2.jpg" alt="Blog 2">
@@ -708,7 +704,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                <div class="col-12 col-lg-4 pb-3" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <div class="blog-card">
                         <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-1.jpg" alt="Blog 3">
@@ -731,49 +727,57 @@
     <div class="text-center py-5 common-header ">
         <h3>Pricing</h3>
     </div>
-    <div class="pricing-container">
+   <div class="container">
+    <div class=" row ">
         <!-- Basic Plan -->
-        <div class="pricing-card" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <h3>Basic</h3>
-            <p class="price">$10.90 <span>/ per month</span></p>
-            <ul>
-                <li>50GB Storage</li>
-                <li>Bandwidth 10 GB</li>
-                <li>Up to 3 Databases</li>
-                <li>E-mail accounts: YES</li>
-                <li>Up to 10 free SMS</li>
-            </ul>
-            <a href="#" class="btn">Select Plan</a>
+        <div class="col-12 col-lg-4 ">
+            <div class="pricing-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h3>Basic</h3>
+                <p class="price">$10.90 <span>/ per month</span></p>
+                <ul>
+                    <li>50GB Storage</li>
+                    <li>Bandwidth 10 GB</li>
+                    <li>Up to 3 Databases</li>
+                    <li>E-mail accounts: YES</li>
+                    <li>Up to 10 free SMS</li>
+                </ul>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
         </div>
-
-        <!-- Startup Plan (Highlighted) -->
-        <div class="pricing-card featured">
-            <h3>Startup</h3>
-            <p class="price">$79.90 <span>/ per month</span></p>
-            <ul>
-                <li>500GB Storage</li>
-                <li>Bandwidth 45 GB</li>
-                <li>Up to 10 Databases</li>
-                <li>E-mail accounts: YES</li>
-                <li>Up to 150 free SMS</li>
-            </ul>
-            <a href="#" class="btn">Select Plan</a>
+    
+        <div class="col-12 col-lg-4">
+            <!-- Startup Plan (Highlighted) -->
+            <div class="pricing-card featured">
+                <h3>Startup</h3>
+                <p class="price">$79.90 <span>/ per month</span></p>
+                <ul>
+                    <li>500GB Storage</li>
+                    <li>Bandwidth 45 GB</li>
+                    <li>Up to 10 Databases</li>
+                    <li>E-mail accounts: YES</li>
+                    <li>Up to 150 free SMS</li>
+                </ul>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
+    
         </div>
-
-        <!-- Enterprise Plan -->
-        <div class="pricing-card" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <h3>Enterprise</h3>
-            <p class="price">$400.90 <span>/ per month</span></p>
-            <ul>
-                <li>Unlimited Storage</li>
-                <li>Unlimited Bandwidth</li>
-                <li>Up to 10 Databases</li>
-                <li>E-mail accounts: YES</li>
-                <li>Up to 150 free SMS</li>
-            </ul>
-            <a href="#" class="btn">Select Plan</a>
+        <div class="col-12 col-lg-4">
+            <!-- Enterprise Plan -->
+            <div class="pricing-card" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h3>Enterprise</h3>
+                <p class="price">$400.90 <span>/ per month</span></p>
+                <ul>
+                    <li>Unlimited Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Up to 10 Databases</li>
+                    <li>E-mail accounts: YES</li>
+                    <li>Up to 150 free SMS</li>
+                </ul>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
         </div>
     </div>
+   </div>
 
 </section>
 

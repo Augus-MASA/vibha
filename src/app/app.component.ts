@@ -10,15 +10,44 @@ import AOS from 'aos';
 export class AppComponent {
   title = 'Demo web';
 
-  isNavbarCollapsed = false;
+  isNavbarCollapsed:boolean = false;
 
   whatsappUrl: string = 'https://wa.me/+91 133345555?text=I\'m%20interested%20in%20Purchase%20Your%20Furniture%20Products';
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
+    console.log(this.isNavbarCollapsed);
+    
+  }
+
+  
+
+  toggleNavbar1() {
+    this.isNavbarCollapsed = false;
+  }
+
+  closeMenu() {
+    this.isNavbarCollapsed = false;
   }
 
   ngOnInit() {
     AOS.init();
+    const hamburger = document.querySelector(".hamburger") as HTMLElement | null;
+    const navMenu = document.querySelector(".nav-menu") as HTMLElement | null;
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) => {
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    }
+
   }
   
   handleNavClick(link: string): void {
