@@ -1353,10 +1353,16 @@ input {
 }
 
 @media (max-width: 768px) {
+    .srocll-section{
+            background-color: #1F2D4A;
+            height: 74vh !important;
+        }
     .home {
-            background-position: right !important;
+            background-image: linear-gradient(rgba(31, 45, 74, 0), rgb(31 45 74 / 0%)), url(https://bootstrapmade.com/content/demo/Nova/assets/img/why-us-bg.jpg) !important;
+                background-position: center ;
 
         }
+    
     .mission .card {
         width: 100% !important;
         margin-top: 20px !important;
