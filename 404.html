@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="0; url=/" />
+</head>
+
+<body></body>
+<script>
+    // Redirect to index.html preserving the path
+    var redirectTo = location.pathname.replace('/vibha', '');
+    sessionStorage.redirect = redirectTo + location.search + location.hash;
+    window.location.href = '/vibha/index.html';
+</script>
+
+</html>
