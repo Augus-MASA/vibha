@@ -135,7 +135,6 @@ font-family: system-ui, sans-serif;
 }
 
 .about {
-    background-color: var(--background-light);
     height: 100vh;
 }
 
@@ -147,12 +146,12 @@ font-family: system-ui, sans-serif;
 
 .element {
     display: -webkit-box;
-    -webkit-line-clamp: 20;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5;
-    max-height: 32em;
+    max-height: 10em;
 }
 
 .about-content p {
@@ -363,8 +362,7 @@ font-family: system-ui, sans-serif;
 }
 
 .port {
-    position: relative;
-    height: 35vh;
+    height: 38vh;
     overflow: hidden;
     border-radius: 7px;
 }
@@ -395,18 +393,16 @@ font-family: system-ui, sans-serif;
     object-fit: cover;
 }
 
-.port:hover img {
+// .port:hover img {
 
-    transform: scale(1.2);
+//     transform: scale(1.2);
 
-}
+// }
 
 .aboutimg {
-    background-image: url('https://bootstrapmade.com/content/demo/QuickStart/assets/img/hero-services-img.webp');
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .modal-content {
