@@ -1,0 +1,209 @@
+<nav class="navbar navbar-expand-lg  sticky-top W-100  ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <div class="home-logo">
+                <div class="text-center d-flex align-items-center ">
+                    <img src="assets/image.png" alt="image">
+                    <p class="m-0">VIBHA</p>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler menu-button" type="button" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation" style="z-index: 99999999999;" (click)="toggleNavbar()">
+            <div class="hamburger" (click)="toggleNavbar()" [ngClass]="{ 'active': isNavbarCollapsed }">
+                <span class="bar" (click)="toggleNavbar()"></span>
+                <span class="bar" (click)="toggleNavbar()"></span>
+                <span class="bar" (click)="toggleNavbar()"></span>
+            </div>
+
+        </button>
+
+        <div class="collapse  d-flex justify-content-center  navbar-collapse   W-100 "
+            [ngClass]="{'show ': isNavbarCollapsed, 'd-none ': !isNavbarCollapsed,}" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-50">
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'home'}" (click)="setActive('home')"
+                    (click)="toggleNavbar()" href="#">
+                    Home
+                </a>
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'products'}" (click)="setActive('products')"
+                    (click)="toggleNavbar()" href="#Gallery">
+                    Services
+                </a>
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'about'}">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'about'}" (click)="setActive('about')"
+                        (click)="toggleNavbar()" href="#about">
+                        About
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#mission">Mission & Vision</a></li>
+                        <li><a href="#Leadership">Leadership & Team</a></li>
+                    </ul>
+                </li>
+
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')"
+                    (click)="toggleNavbar()" href="#contact">
+                    Contact
+                </a>
+
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'career'}">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'career'}"
+                        (click)="setActive('careers'); toggleNavbar()" href="/career">
+                        Careers
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#Studies">Case Studies</a></li>
+                        <li><a href="#blog">Blogs</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'clients'}">
+
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'clients'}"
+                        (click)="setActive('clients'); toggleNavbar()" href="#clients">
+                        Clients
+                    </a>
+
+                    <ul class="submenu" style="left: -100px;">
+                        <li><a href="#clients">Client Testimonials</a></li>
+                    </ul>
+
+                </li>
+
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<section class="home-1">
+    <div class="d-flex justify-content-center align-items-center h-100 pt-5 ">
+        <div class="home-content text-center col-12 col-lg-6 mt-5 pt-5 " >
+            <p class="mt-5">The Future Vibha Corporation </p>
+            <span>Help us take on Product Challenges.
+</span>
+            <button class="home-btn mt-3"><a href="/career">More</a></button>
+        </div>
+    </div>
+</section>
+
+<section class="impact-section">
+    <h2>Make An Impact</h2>
+    <p>
+        A positive workplace environment can also lead to increased productivity and employee satisfaction. <br />
+        Employees who feel comfortable and safe in their workplace are more likely to be productive and engaged in their
+        work.
+    </p>
+
+    <div class="impact-cards">
+        <div class="impact-card">
+            <img src="https://alldirectionsource.com/assets/img/im4.png" alt="Projects Completed" />
+            <h3>PROJECTS COMPLETED</h3>
+        </div>
+        <div class="impact-card">
+            <img src="https://alldirectionsource.com/assets/img/im5.png" alt="Age of VIBHA" />
+            <h3>Age Of VIBHA</h3>
+        </div>
+        <div class="impact-card">
+            <img src="https://alldirectionsource.com/assets/img/im6.png" alt="Employees" />
+            <h3>EMPLOYEES</h3>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 text-center bg-white">
+    <div class="container">
+        <h2 class="fw-bold mb-3">Our Benefits</h2>
+        <p class="text-muted mb-5">
+            Our work is rewarding in more ways than one. We provide our staff with best-in-class benefits, like:
+        </p>
+
+        <div class="row g-4">
+            <!-- Benefit Card -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-1">
+                    <h5 class="text-orange fw-bold mb-1">FLEXIBLE</h5>
+                    <h6 class="fw-bold">WORK ENVIRONMENT</h6>
+                    <p>Full Time, work from home,<br>work remotely, hybrid work<br>from office...</p>
+                </div>
+            </div>
+
+            <!-- Repeat for each benefit -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-2">
+                    <h5 class="text-orange fw-bold mb-1">25 DAYS</h5>
+                    <h6 class="fw-bold">PAID VACATION</h6>
+                    <p>(that’s five whole weeks)</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-3">
+                    <h5 class="text-orange fw-bold mb-1">12 WEEKS</h5>
+                    <h6 class="fw-bold">PAID MATERNITY LEAVE</h6>
+                    <p>or primary care-giver leave<br>for new parents</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-4">
+                    <h5 class="text-orange fw-bold mb-1">SALARY</h5>
+                    <h6 class="fw-bold">COMPETITIVE</h6>
+                    <p>with bonus potential</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-5">
+                    <h5 class="text-orange fw-bold mb-1">SKILLS</h5>
+                    <h6 class="fw-bold">PROFESSIONAL GROWTH</h6>
+                    <p>each year we’ll help you<br>develop your skills and grow</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="benefit-card gradient-6">
+                    <h5 class="text-orange fw-bold mb-1">COFFEE</h5>
+                    <h6 class="fw-bold">UNLIMITED</h6>
+                    <p>and loads of snacks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-light-blue py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-3">Current openings</h2>
+        <p class="text-danger fw-medium fs-5">No Current Vacancies..</p>
+    </div>
+</section>
+
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-2">Careers</h2>
+        <p class="text-muted mb-4 text-uppercase">Apply for job hear</p>
+        <a href="/career" class="btn btn-orange fw-bold px-4 py-2">
+            Upload Your Profile <span class="ms-1">&rsaquo;</span>
+        </a>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="text-center">
+        <p class="m-0 py-2">© Copyright Alldirectionsource Technologies Pvt Ltd. All Rights Reserved</p>
+    </div>
+</div>
+
+<div class="whatsapp-button">
+    <a [href]="whatsappUrl" target="_blank" class="btn   whatsapp-link">
+        <span class="material-symbols-outlined">chat</span>
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+</div>
+
+

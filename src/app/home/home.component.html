@@ -1,0 +1,851 @@
+<nav class="navbar navbar-expand-lg  sticky-top W-100  ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <div class="home-logo">
+                <div class="text-center d-flex align-items-center ">
+                    <img src="assets/image.png" alt="image">
+                    <p class="m-0">VIBHA</p>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler menu-button" type="button" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation" style="z-index: 99999999999;" (click)="toggleNavbar()">
+            <div class="hamburger" (click)="toggleNavbar()" [ngClass]="{ 'active': isNavbarCollapsed }">
+                <span class="bar" (click)="toggleNavbar()"></span>
+                <span class="bar" (click)="toggleNavbar()"></span>
+                <span class="bar" (click)="toggleNavbar()"></span>
+            </div>
+
+        </button>
+
+        <div class="collapse  d-flex justify-content-center  navbar-collapse   W-100 "
+            [ngClass]="{'show ': isNavbarCollapsed, 'd-none ': !isNavbarCollapsed,}" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-50">
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'home'}" (click)="setActive('home')"
+                    (click)="toggleNavbar()" href="#">
+                    Home
+                </a>
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'products'}" (click)="setActive('products')"
+                    (click)="toggleNavbar()" href="#Gallery">
+                    Services
+                </a>
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'about'}">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'about'}" (click)="setActive('about')"
+                        (click)="toggleNavbar()" href="#about">
+                        About
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#mission">Mission & Vision</a></li>
+                        <li><a href="#Leadership">Leadership & Team</a></li>
+                    </ul>
+                </li>
+
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')"
+                    (click)="toggleNavbar()" href="#contact">
+                    Contact
+                </a>
+
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'career'}">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'career'}"
+                        (click)="setActive('career'); toggleNavbar()" href="/career">
+                        Careers
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#Studies">Case Studies</a></li>
+                        <li><a href="#blog">Blogs</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'clients'}">
+
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'clients'}"
+                        (click)="setActive('clients'); toggleNavbar()" href="#clients">
+                        Clients
+                    </a>
+
+                    <ul class="submenu" style="left: -100px;">
+                        <li><a href="#clients">Client Testimonials</a></li>
+                    </ul>
+
+                </li>
+
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<section class="home">
+    <div class="d-flex justify-content-center align-items-center h-100 pt-5 ">
+        <div class="home-content text-center col-12 col-lg-6 mt-5 pt-5 " data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" data-aos="fade-up">
+            <p class="mt-5">The Future Vibha Corporation </p>
+            <span>Is the name of Goddess Mahalakshmi. Vibha refers to Shining-Bright-Light</span>
+            <button class="home-btn mt-3"><a href="#about">More</a></button>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about" style="scroll-margin-top: 40px;">
+    <div class="text-center py-5 common-header ">
+        <h3>About Vibha Corporation & Co</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 ">
+                <div class="about-content" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <p class="element">
+                        Vibha Corporation & Co
+                        Vibha is the name of Goddess Mahalakshmi. Vibha refers to Shining Bright Light.
+
+                        Vibha Corporation will operate in the Field of
+
+                        Agriculture
+
+                        Food
+
+                        Education
+
+                        Real Estate & Construction
+
+                        Solar Energy
+
+                        Vision
+
+                        Qualitative
+
+                        Vibha will integrate the strength and core-competencies of all natural and identified resources
+                        to ensure
+                        consistent
+                        region level growth in the Field of Agriculture – Natural Way Farming, Food – Ready to Eat &
+                        Ready to Cook
+                        Chapathis,
+                        Guidance, Support, Life & Soft Skill, Core Area & Entrepreneurial Training, Real Estate
+                        Development &
+                        Construction and
+                        Solar Energy
+
+                        Quantitative
+
+                        Natural Way Farming: To Cultivate in Excess of 400,000 Acres of Land in Tamil Nadu
+
+                        Food: To Achieve Daily Sales of 1 (One) Million Chapathis
+
+                        Education / Coaching / Training: To Guide, Train, Empower and Employ 100,000 Talent(s) by 2030
+
+                        Real Estate and Construction: To Develop, Construct & Deliver Two (2) Million Sq. Ft of
+                        Residential &
+                        Commercial
+                        Space
+                        in Chennai and Bangalore by 2030
+
+                        Solar Energy: To install and harvest 5 GW of Roof Top Solar Power
+
+                        Mission
+
+                        To adhere to the best ethical and traditional practices that would deliver excellence through
+                        our committed,
+                        well –
+                        trained smart workforce and be responsible for growth to all stake holders.
+
+                        Partners
+
+                        Sundar Rajan Jagannathan (SRJ) – Managing Partner
+
+                        SRJ was the Head of Radiance Realty Developers India Limited as its Chief Operating Officer
+                        between July
+                        2010 to
+                        Jan
+                        2013 in Chennai and June 2015 to May 2021 in Bangalore. Prior to that, SRJ was the Head of Land
+                        (Investments,
+                        Development & Industrial) Services division at CB Richard Ellis Chennai Transaction Management
+                        Group. SRJ
+                        responsibilities in development side included Sourcing of Land – Acquisitions – Project
+                        Definition –
+                        Government
+                        Co-ordination for Approvals – Product Segmentation – Pricing Strategy – Sales & Marketing
+                        Planning &
+                        Scheduling
+                        –
+                        Financial Closure – Bank Co-ordination – Documentation – Project Level Co-ordination /
+                        Clearances
+                        (Management &
+                        Client
+                        Perspective(s)) – Client Servicing & Management – Handing Over Etc., In CB Richard Ellis, SRJ
+                        responsibilities
+                        were
+                        primarily clients-directed and comprehensive. His skill-set included understanding Diversified
+                        Needs of his
+                        Clients and
+                        perform Transaction Management – Land / Space Acquisition and Leasing, Industrial Space
+                        Acquisitions and
+                        Dispositions.
+                        In all, SRJ has handled projects in excess of INR 1200 Crores. He had devoted lot of time &
+                        effort to
+                        strengthen
+                        the
+                        CBRE’s strategic development of the Investments and Financial Service Line to represent Project
+                        Developments
+                        (Residential & Commercial) in South India. Over the Years, due to his Diversified Operational
+                        Experience,
+                        SRJ
+                        has
+                        developed keen interest in the field of Agriculture, Food, Solar Energy, Education and needless
+                        to mention –
+                        Real Estate
+                        & Construction Operations. Vibha Corporation is the brainchild of SRJ. Vibha will excell in the
+                        above chosen
+                        areas over
+                        the next 2 decades.
+
+
+
+                        Kanakavalli Sundar Rajan (KSR)
+
+                        KSR is Mrs. SRJ and having understood the ambitions of her better-half, she has extended her
+                        helping arm in
+                        all
+                        possible
+                        ways to SRJ. She holds a Bachelor of Business Administration (B.B.A) Degree from Vidyasagar
+                        College of Arts
+                        &
+                        Science,
+                        Chengelpet. She is a Home – maker cum Partner in all the ventures. She hails from Singaperumal
+                        Koil near
+                        Chengalpet. She
+                        has been the pillar to SRJ in all his initiatives and works till date personally and
+                        professionally.
+
+                        Vibha Corporation & Co GST NO: 33AATFV8112F1Z0
+
+                        Vibha Corporation & Co PAN No: AATFV8112F
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 " data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="aboutimg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="srocll-section" id="Studies" style="scroll-margin-top: 40px;">
+    <section class="flourishing-section" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="flourishing-section-border rounded-1 p-3">
+                        <div class="flourishing-section-content rounded-2 p-2">
+                            <div class="big-number d-inline-block">100<span class="plus-sign">+</span></div>
+                            <h2 class="main-heading">Years of Flourishing</h2>
+                            <h3 class="sub-heading">Businesses</h3>
+                            <p class="description">
+                                His Holiness Sri Rangaramanuja Mahadesikan and the Current Pontiff of Srirangam Srimath
+                                Andavan Ashram
+                                Sri
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel pt-5">
+        <div class="card-container mt-2">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
+                    alt="Mahashivratri">
+                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
+                <p>23 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
+                    alt="Conflict Resolution">
+                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
+                <p>19 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
+                    alt="Mahashivratri">
+                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
+                <p>23 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
+                    alt="Conflict Resolution">
+                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
+                <p>19 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
+                    alt="Mahashivratri">
+                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
+                <p>23 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
+                    alt="Conflict Resolution">
+                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
+                <p>19 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
+                    alt="Unexpected Loss">
+                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
+                <p>18 Feb 2025 • 3 min read</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Leadership position-relative w-100 overflow-hidden  pt-5" id="Leadership"
+    style="scroll-margin-top: 100px;">
+
+    <div class=" w-100 overflow-hidden pt-3 ">
+        <div class="text-center py-5 common-header ">
+            <h3>Leadership and Team</h3>
+        </div>
+        <div class="team-container">
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 purple">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-1.jpg"
+                        alt="Andrey Khusid">
+                    <h3>Andrey Khusid</h3>
+                    <p>CEO and Co-founder</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 olive">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-2.jpg"
+                        alt="Stevan Redfen">
+                    <h3>Stevan Redfen</h3>
+                    <p>SVP Growth</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 darkblue">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-3.jpg"
+                        alt="AJ Josephson">
+                    <h3>AJ Josephson</h3>
+                    <p>Head of Design</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 lightblue">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-4.jpg"
+                        alt="Anna Boyarkina">
+                    <h3>Anna Boyarkina</h3>
+                    <p>Head of Product</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 blue skewed">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-5.jpg"
+                        alt="Ivan Demshin">
+                    <h3>Ivan Demshin</h3>
+                    <p>Head of Development</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 orange">
+                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-6.jpg"
+                        alt="James Beer">
+                    <h3>James Beer</h3>
+                    <p>Chief Financial Officer</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 violet">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-13.webp"
+                        alt="Yuliya Malysh">
+                    <h3>Yuliya Malysh</h3>
+                    <p>COO and Co-founder</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100 lightblue">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-f-5.webp"
+                        alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Head of Operations</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="member w-100ß darkblue ">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-9.webp"
+                        alt="Adam Garr">
+                    <h3>Adam Garr</h3>
+                    <p>Head of Sales</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="pt-5" id="mission" class="mission" style="scroll-margin-top: 40px;">
+    <div class="text-center py-5 common-header ">
+        <h3>Mission and Vision</h3>
+    </div>
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between row  ">
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card mission">
+                    <div class="icon">🎯</div>
+                    <div class="title">Mission</div>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card vision">
+                    <div class="icon">💡</div>
+                    <div class="title">Vision</div>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="number">02</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card values">
+                    <div class="icon">🤝</div>
+                    <div class="title">Values</div>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="number">03</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="protofolio py-5" id="Gallery" style="scroll-margin-top: 40px;">
+    <div class="container">
+        <div class="text-center py-5 common-header ">
+            <h3>Services</h3>
+        </div>
+        <div class="row" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiT346aD06wBhAPsgJmiANed305j5WkRSydQ&s" />
+                    <div class="port-cont">
+
+                        <h2>Food</h2>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img src="https://i.pinimg.com/736x/a2/50/41/a25041b2e91ef5a53ee330f88eb1d496.jpg" />
+                    <div class="port-cont">
+                        <h2>Agriculture</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRD-GCdmvUc1r7mB4tCKT4K07VbLI2aeLkA&s" />
+                    <div class="port-cont">
+                        <h2>Nature</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+
+                    <img
+                        src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1586524068358-77d2196875e7%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8MXx8aW5kaWFuJTIwYnJlYWR8ZW58MHx8fHwxNjQ1MTAwMzc4%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D900%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral" />
+                    <div class="port-cont">
+                        <h2>Food</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img
+                        src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1599008633840-052c7f756385%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8Mjh8fGVkdWNhdGlvbnxlbnwwfHx8fDE2NDUxMDA0NDk%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D900%26utm_source%3Dendurance-innovation%26utm_medium%3Dreferral" />
+                    <div class="port-cont">
+                        <h2>Education</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img
+                        src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1560518883-ce09059eeffa%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnw1NTEzfDB8MXxzZWFyY2h8NXx8cmVhbCUyMGVzdGF0ZXxlbnwwfHx8fDE2NDUwMjY4NTM%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D900" />
+                    <div class="port-cont">
+                        <h2>Real Estate</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiN4tsi40OZApHIaLAl9-xQOmdH5beRlQ7qQ&s" />
+                    <div class="port-cont">
+                        <h2>Solar Energy</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEnSvROZoTAJ9D63yzcvIAMmH_G9VHOKAvICby61p8AQY-AzDTjGN_u50WR4DwqtMMEr8&usqp=CAU" />
+                    <div class="port-cont">
+                        <h2>Business</h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="port">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7pT0NYvWFXKMDd_py-VSbGLJ0iRHQwgSBDQ&s" />
+                    <div class="port-cont">
+                        <h2>Business</h2>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section id="careers" class="pt-5" style="scroll-margin-top: 40px;" data-aos="fade-up" data-aos="fade-up"
+    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="text-center py-5 common-header ">
+        <h3>Careers</h3>
+    </div>
+
+    <div class="carees text-center d-flex justify-content-center ">
+        <div class="">
+            <div class="d-flex justify-content-center">
+                <h2 class="pt-5 ">Grow your career at <span>VIBHA</span> </h2>
+            </div>
+            <div class="d-flex justify-content-center ">
+                <p class="">Join our dynamic, driven, friendly culture to spark your career growth and help the most
+                    forward-thinking brands and
+                    retailers in the world build best-in-class user-generated content programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="text-center py-5 common-header ">
+        <h3>Collect partner applications using Google Forms</h3>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center row">
+            <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="form-container ">
+                    <div class="form-header">Become a partner</div>
+
+                    <div class="form-group">
+                        <label>Name <span class="required">*</span></label>
+                        <input type="text" placeholder="Your answer">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone <span class="required">*</span></label>
+                        <input type="tel" placeholder="Your answer">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" placeholder="Your answer">
+                    </div>
+                    <div></div>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="content d-flex justify-content-center w-100">
+                    <ul>
+                        <li>Use prebuilt templates to easily create a web form to capture partner applications</li>
+                        <li>Customize partner form to capture data relevant to your business needs</li>
+                        <li>Prioritize and quality partners with automated scoring for responses</li>
+                        <li>Record page URL, UTM parameters, and track your traffic sources</li>
+                        <li>Record page URL, UTM parameters, and track your traffic sources</li>
+                        <li>Record page URL, UTM parameters, and track your traffic sources</li>
+                        <li>Customize partner form to capture data relevant to your business needs</li>
+                        <li>Prioritize and quality partners with automated scoring for responses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="clients" class="pt-5">
+    <div class="text-center py-5 common-header ">
+        <h3>Clients</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4" data-aos="fade-up-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="testimonial-card red">
+                    <div class="quote">“</div>
+                    <div class="title">Client Testimonials</div>
+                    <p class="client-info">CLIENT NAME<br>Their Position</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        convallis.</p>
+                    <div class="design-shape"></div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4" data-aos="fade-up-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="testimonial-card orange">
+                    <div class="quote">“</div>
+                    <div class="title">Client Testimonials</div>
+                    <p class="client-info">CLIENT NAME<br>Their Position</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        convallis.</p>
+                    <div class="design-shape"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4" data-aos="fade-up-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <div class="testimonial-card green">
+                    <div class="quote">“</div>
+                    <div class="title">Client Testimonials</div>
+                    <p class="client-info">CLIENT NAME<br>Their Position</p>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        convallis.</p>
+                    <div class="design-shape"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</section>
+
+<section>
+    <div class="blog-container" id="blog">
+        <div class="text-center py-5 common-header ">
+            <h3>My Blog</h3>
+        </div>
+        <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever.
+        </p>
+
+        <div class="container">
+            <div class=" row">
+
+                <div class="col-12 col-lg-4 pb-3" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="blog-card">
+                        <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-3.jpg" alt="Blog 1">
+                        <div class="blog-content">
+                            <h3>Traveling Europe By Campervan</h3>
+                            <p>by Shadab on March 26, 2022</p>
+                            <p>It has almost been a year that San and I bought a campervan...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pb-3" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="blog-card">
+                        <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-2.jpg" alt="Blog 2">
+                        <div class="blog-content">
+                            <h3>Holiday Beauty Look To Rule Them All</h3>
+                            <p>by Shadab on March 26, 2022</p>
+                            <p>Life since Covid has made me a lot more of a minimal, bare-face type of a girl...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pb-3" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="blog-card">
+                        <img src="https://bootstrapmade.com/content/demo/Dewi/assets/img/team/team-1.jpg" alt="Blog 3">
+                        <div class="blog-content">
+                            <h3>Potential Gordon Trade Scenarios</h3>
+                            <p>by Shadab on March 26, 2022</p>
+                            <p>It has almost been a year that San and I bought a campervan...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="contact" class="position-relative" style="scroll-margin-top: 50px;" data-aos="fade-up"
+    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="text-center py-5 common-header ">
+        <h3>Contact</h3>
+    </div>
+    <div class="container">
+        <h5 class="form-heading mb-4">Write to us</h5>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Name <span>*</span></label>
+                    <input type="text" class="form-control popup-input" placeholder="Full name">
+                </div>
+                <div class="col-md-6">
+                    <label>Mobile <span>*</span></label>
+                    <input type="text" class="form-control popup-input" placeholder="Phone Number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Email <span>*</span></label>
+                    <input type="email" class="form-control popup-input" placeholder="Email ID">
+                </div>
+                <div class="col-md-6">
+                    <label>Subject</label>
+                    <input type="text" class="form-control popup-input" placeholder="Title">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <label>Message</label>
+                    <textarea class="form-control popup-input" rows="4"
+                        placeholder="*Type your message here!"></textarea>
+                </div>
+            </div>
+
+            <div class="text-end d-flex justify-content-end mb-3 btn-message">
+                <!-- From Uiverse.io by eirikvold -->
+                <button>
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send Message</span>
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+
+<div class="footer">
+    <div class="text-center">
+        <p class="m-0 py-2">© Copyright Alldirectionsource Technologies Pvt Ltd. All Rights Reserved</p>
+    </div>
+</div>
+
+<div class="whatsapp-button">
+    <a [href]="whatsappUrl" target="_blank" class="btn   whatsapp-link">
+        <span class="material-symbols-outlined">chat</span>
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+</div>

@@ -1,0 +1,318 @@
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 2em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition:
+        stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+.nav-link {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.nav-link:hover{
+color: #f27c0f !important;
+}
+
+.nav-link.active {
+    color: #f27c0f !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #030070;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+
+
+
+
+
+.navbar-brand {
+    font-size: large;
+    display: grid;
+    text-align: center;
+    font-weight: 600;
+    color: #030070;
+    z-index: 999999;
+
+    span {
+        color: #f27c0f;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+.navbar-nav.active {
+    color: #f27c0f !important;
+    position: relative;
+}
+
+.navbar-nav.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #030070;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse.show {
+
+        position: fixed;
+        top: 0;
+        left: -220px;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1051;
+        transition: left 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        position: absolute;
+        top: 1rem;
+        /* top: 10px; */
+        background: rgb(255, 255, 255);
+        top: 62px;
+        left: 0;
+        padding: 10px;
+        height: 55vh;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    /* Overlay Effect */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent gray */
+        z-index: 1050;
+        display: none;
+    }
+
+    .overlay.show {
+        display: block;
+    }
+
+}
+
+.home-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    background-color: #1F2D4A;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+}
+
+.hours-title {
+    color: #030070;
+    font-size: 20px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+}
+
+
+
+.impact-section {
+  background-color: #eaf8fd;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.impact-section p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.impact-card {
+  border: 2px solid orange;
+  border-radius: 20px;
+  padding: 30px 20px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.impact-card h3 {
+  color: orange;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.benefit-card {
+  padding: 25px;
+  border-radius: 20px;
+  color: #000;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.text-orange {
+  color: orange;
+  text-transform: uppercase;
+}
+
+/* Gradient backgrounds */
+.gradient-1 {
+  background: linear-gradient(135deg, #fddde6, #c6f7f5);
+}
+
+.gradient-2 {
+  background: linear-gradient(135deg, #fdf1d9, #d8efff);
+}
+
+.gradient-3 {
+  background: linear-gradient(135deg, #ffe4ea, #cfd6ff);
+}
+
+.gradient-4 {
+  background: linear-gradient(135deg, #caf6ff, #fbd0f6);
+}
+
+.gradient-5 {
+  background: linear-gradient(135deg, #e6ffe0, #ffffcc);
+}
+
+.gradient-6 {
+  background: linear-gradient(135deg, #e0ccff, #ffd9ec);
+}
+
+
+.bg-light-blue {
+  background-color: #f0fbff; /* light sky blue background */
+}
+
+.btn-orange {
+  background-color: #ffa726;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-orange:hover {
+  background-color: #fb8c00;
+  color: white;
+}
+
+
+.home-1 {
+    height: 100vh;
+background-image: linear-gradient(rgb(31 45 74 / 8%), rgb(31 45 74 / 0%)), url(https://bootstrapmade.com/content/demo/Multi/assets/img/hero-carousel/hero-carousel-1.jpg);    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
