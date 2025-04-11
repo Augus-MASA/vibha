@@ -24,4 +24,11 @@
 <body>
   <app-root></app-root>
 </body>
+<script>
+  if (sessionStorage.redirect) {
+    var redirectUrl = sessionStorage.redirect;
+    sessionStorage.redirect = null;
+    history.replaceState(null, null, redirectUrl);
+  }
+</script>
 </html>
