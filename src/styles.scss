@@ -62,7 +62,7 @@ nav {
 
 .home {
     height: 100vh;
-background-image: linear-gradient(rgb(31 45 74 / 8%), rgb(31 45 74 / 0%)), url(https://bootstrapmade.com/content/demo/Company/assets/img/hero-carousel/hero-carousel-2.jpg);    background-position: center;
+background-image: linear-gradient(rgba(37, 45, 61, 0.43), rgba(42, 49, 64, 0.542)), url(https://bootstrapmade.com/content/demo/Company/assets/img/hero-carousel/hero-carousel-2.jpg);    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -79,7 +79,7 @@ font-size: 41px;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #212529;
+    color: #eff0f2;
     font-weight: 600;
     letter-spacing: 1px;
     text-shadow: 1px 1px #ffffff;
@@ -136,7 +136,7 @@ font-family: system-ui, sans-serif;
 
 .about {
     background-color: var(--background-light);
-    height: 140vh;
+    height: 100vh;
 }
 
 .common-header h3 {
@@ -931,7 +931,6 @@ color: #f27c0f !important;
 
 .card {
     position: relative;
-    width: 220px;
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -1426,7 +1425,6 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 40px;
   font-family: sans-serif;
 }
 

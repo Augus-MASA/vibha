@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 import Aos from 'aos';
 
 @Component({
@@ -11,8 +12,13 @@ export class HomeComponent {
   title = 'Demo web';
 
   isNavbarCollapsed: boolean = false;
+  activeLink: any;
+  activeLinkName:any
 
   whatsappUrl: string = 'https://wa.me/+91 133345555?text=I\'m%20interested%20in%20Purchase%20Your%20Furniture%20Products';
+
+  constructor(private router: Router) { }
+  
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
     console.log(this.isNavbarCollapsed);
@@ -30,6 +36,14 @@ export class HomeComponent {
   }
 
   ngOnInit() {
+    
+    if (!!this.router.url){
+      this.activeLink = this.router.url
+    }
+    else{
+      this.activeLink = 'home'
+    }
+
     Aos.init();
     const hamburger = document.querySelector(".hamburger") as HTMLElement | null;
     const navMenu = document.querySelector(".nav-menu") as HTMLElement | null;
@@ -50,10 +64,10 @@ export class HomeComponent {
 
   }
 
-  handleNavClick(link: string): void {
-    this.activeLink = link;
-    this.toggleNavbar();
-  }
+  // handleNavClick(link: string): void {
+  //   this.activeLink = link;
+  //   this.toggleNavbar();
+  // }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: Event) {
@@ -68,7 +82,6 @@ export class HomeComponent {
       this.isNavbarCollapsed = false;
     }
   }
-  activeLink: string = 'home'; // Default active link
 
   setActive(link: string) {
     this.activeLink = link;

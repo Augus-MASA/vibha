@@ -21,39 +21,36 @@
         <div class="collapse  d-flex justify-content-center  navbar-collapse   W-100 "
             [ngClass]="{'show ': isNavbarCollapsed, 'd-none ': !isNavbarCollapsed,}" id="navbarNavAltMarkup">
             <div class="navbar-nav w-50">
-                <a class="nav-link" [ngClass]="{'active': activeLink === 'home'}" (click)="setActive('home')"
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'home' || activeLink === '/#home' || activeLink == '/'}" (click)="setActive('home')"
                     (click)="toggleNavbar()" href="#">
                     Home
                 </a>
-                <a class="nav-link" [ngClass]="{'active': activeLink === 'products'}" (click)="setActive('products')"
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'products' || activeLink === '/#Gallery'}" (click)="setActive('products')"
                     (click)="toggleNavbar()" href="#Gallery">
                     Services
                 </a>
-                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'about'}">
-                    <a class="nav-link" [ngClass]="{'active': activeLink === 'about'}" (click)="setActive('about')"
+                <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'about' || activeLink === '/#about' || activeLink === '/#mission' || activeLink === '/#Leadership'}">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'about' || activeLink === '/#about' || activeLink === '/#mission' || activeLink === '/#Leadership'}" (click)="setActive('about')"
                         (click)="toggleNavbar()" href="#about">
                         About
                     </a>
                     <ul class="submenu">
-                        <li><a href="#mission">Mission & Vision</a></li>
-                        <li><a href="#Leadership">Leadership & Team</a></li>
+                        <li><a href="#mission" (click)="setActive('about')">Mission & Vision</a></li>
+                        <li><a href="#Leadership" (click)="setActive('about')">Leadership & Team</a></li>
                     </ul>
                 </li>
 
-                <a class="nav-link" [ngClass]="{'active': activeLink === 'contact'}" (click)="setActive('contact')"
+                <a class="nav-link" [ngClass]="{'active': activeLink === 'contact' || activeLink === '/#contact'}" (click)="setActive('contact')"
                     (click)="toggleNavbar()" href="#contact">
                     Contact
                 </a>
 
                 <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'career'}">
-                    <a class="nav-link" [ngClass]="{'active': activeLink === 'career'}"
-                        (click)="setActive('career'); toggleNavbar()" href="/vibha/career">
+                    <a class="nav-link" [ngClass]="{'active': activeLink === 'career' || activeLink === '/career'}"
+                        (click)="setActive('career'); toggleNavbar()" href="/career">
                         Careers
                     </a>
-                    <ul class="submenu">
-                        <li><a href="#Studies">Case Studies</a></li>
-                        <li><a href="#blog">Blogs</a></li>
-                    </ul>
+                   
                 </li>
 
 
@@ -66,11 +63,18 @@
                         Clients
                     </a>
 
-                    <ul class="submenu" style="left: -100px;">
-                        <li><a href="#clients">Client Testimonials</a></li>
-                    </ul>
-
                 </li>
+
+                            <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'Blogs'}">
+                            
+                                <a class="nav-link" [ngClass]="{'active': activeLink === 'Blogs'}" (click)="setActive('Blogs'); toggleNavbar()"
+                                    href="#blog">
+                                    Blog
+                                </a>
+                            
+                            
+                            </li>
+
 
 
             </div>
@@ -238,117 +242,6 @@
 
 
 
-<section class="srocll-section" id="Studies" style="scroll-margin-top: 40px;">
-    <section class="flourishing-section" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <div class="flourishing-section-border rounded-1 p-3">
-                        <div class="flourishing-section-content rounded-2 p-2">
-                            <div class="big-number d-inline-block">100<span class="plus-sign">+</span></div>
-                            <h2 class="main-heading">Years of Flourishing</h2>
-                            <h3 class="sub-heading">Businesses</h3>
-                            <p class="description">
-                                His Holiness Sri Rangaramanuja Mahadesikan and the Current Pontiff of Srirangam Srimath
-                                Andavan Ashram
-                                Sri
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="carousel pt-5">
-        <div class="card-container mt-2">
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
-                    alt="Mahashivratri">
-                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
-                <p>23 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
-                    alt="Conflict Resolution">
-                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
-                <p>19 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
-                    alt="Mahashivratri">
-                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
-                <p>23 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
-                    alt="Conflict Resolution">
-                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
-                <p>19 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq2DGAqzSJ4tn0gWJin4EVqRRXTi1obKwPw&s"
-                    alt="Mahashivratri">
-                <h3>Mahashivratri Rituals and Tips To Strengthen Your Relationship</h3>
-                <p>23 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EGkRxs9hiwJdm54-tnRZMM-YdPMHVfe8Mg&s"
-                    alt="Conflict Resolution">
-                <h3>Can Astrology Help Resolve Conflicts In My Relationship?</h3>
-                <p>19 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-Etg8KFa45YzcV0RW31czY-vulZSceCXg&s"
-                    alt="Unexpected Loss">
-                <h3>Unexpected Losses: How Can Astrology Help Prevent Them?</h3>
-                <p>18 Feb 2025 • 3 min read</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="Leadership position-relative w-100 overflow-hidden  pt-5" id="Leadership"
     style="scroll-margin-top: 100px;">
@@ -357,84 +250,81 @@
         <div class="text-center py-5 common-header ">
             <h3>Leadership and Team</h3>
         </div>
-        <div class="team-container">
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 purple">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-1.jpg"
-                        alt="Andrey Khusid">
-                    <h3>Andrey Khusid</h3>
-                    <p>CEO and Co-founder</p>
+        <div class="container">
+            <div class="row  team-container ">
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 purple">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-1.jpg"
+                            alt="Andrey Khusid">
+                        <h3>Andrey Khusid</h3>
+                        <p>CEO and Co-founder</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 olive">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-2.jpg"
-                        alt="Stevan Redfen">
-                    <h3>Stevan Redfen</h3>
-                    <p>SVP Growth</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 olive">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-2.jpg"
+                            alt="Stevan Redfen">
+                        <h3>Stevan Redfen</h3>
+                        <p>SVP Growth</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 darkblue">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-3.jpg"
-                        alt="AJ Josephson">
-                    <h3>AJ Josephson</h3>
-                    <p>Head of Design</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 darkblue">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/trainers/trainer-3.jpg"
+                            alt="AJ Josephson">
+                        <h3>AJ Josephson</h3>
+                        <p>Head of Design</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 lightblue">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-4.jpg"
-                        alt="Anna Boyarkina">
-                    <h3>Anna Boyarkina</h3>
-                    <p>Head of Product</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 lightblue">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-4.jpg" alt="Anna Boyarkina">
+                        <h3>Anna Boyarkina</h3>
+                        <p>Head of Product</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 blue skewed">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-5.jpg"
-                        alt="Ivan Demshin">
-                    <h3>Ivan Demshin</h3>
-                    <p>Head of Development</p>
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 blue skewed">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-5.jpg" alt="Ivan Demshin">
+                        <h3>Ivan Demshin</h3>
+                        <p>Head of Development</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 orange">
-                    <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-6.jpg"
-                        alt="James Beer">
-                    <h3>James Beer</h3>
-                    <p>Chief Financial Officer</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 orange">
+                        <img src="https://bootstrapmade.com/content/demo/Mentor/assets/img/team/team-6.jpg" alt="James Beer">
+                        <h3>James Beer</h3>
+                        <p>Chief Financial Officer</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 violet">
-                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-13.webp"
-                        alt="Yuliya Malysh">
-                    <h3>Yuliya Malysh</h3>
-                    <p>COO and Co-founder</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 violet">
+                        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-13.webp"
+                            alt="Yuliya Malysh">
+                        <h3>Yuliya Malysh</h3>
+                        <p>COO and Co-founder</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100 lightblue">
-                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-f-5.webp"
-                        alt="John Doe">
-                    <h3>John Doe</h3>
-                    <p>Head of Operations</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100 lightblue">
+                        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-f-5.webp" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>Head of Operations</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-3">
-                <div class="member w-100ß darkblue ">
-                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-9.webp"
-                        alt="Adam Garr">
-                    <h3>Adam Garr</h3>
-                    <p>Head of Sales</p>
+            
+                <div class="col-12 col-lg-3">
+                    <div class="member w-100ß darkblue ">
+                        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/person/person-m-9.webp" alt="Adam Garr">
+                        <h3>Adam Garr</h3>
+                        <p>Head of Sales</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -448,25 +338,25 @@
         <h3>Mission and Vision</h3>
     </div>
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between row  ">
-            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="card mission">
+        <div class="team-container ">
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card w-100 mission">
                     <div class="icon">🎯</div>
                     <div class="title">Mission</div>
                     <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     <div class="number">01</div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="card vision">
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card w-100 vision">
                     <div class="icon">💡</div>
                     <div class="title">Vision</div>
                     <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     <div class="number">02</div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="card values">
+            <div class="col-12  col-lg-3" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card w-100 values">
                     <div class="icon">🤝</div>
                     <div class="title">Values</div>
                     <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>

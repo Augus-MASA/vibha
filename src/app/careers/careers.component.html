@@ -35,8 +35,8 @@
                         About
                     </a>
                     <ul class="submenu">
-                        <li><a href="#mission">Mission & Vision</a></li>
-                        <li><a href="#Leadership">Leadership & Team</a></li>
+                        <li><a href="#mission" (click)="setActive('about')">Mission & Vision</a></li>
+                        <li><a href="#Leadership" (click)="setActive('about')">Leadership & Team</a></li>
                     </ul>
                 </li>
 
@@ -50,10 +50,6 @@
                         (click)="setActive('careers'); toggleNavbar()" href="/career">
                         Careers
                     </a>
-                    <ul class="submenu">
-                        <li><a href="#Studies">Case Studies</a></li>
-                        <li><a href="#blog">Blogs</a></li>
-                    </ul>
                 </li>
 
 
@@ -66,12 +62,18 @@
                         Clients
                     </a>
 
-                    <ul class="submenu" style="left: -100px;">
-                        <li><a href="#clients">Client Testimonials</a></li>
-                    </ul>
 
                 </li>
-
+                
+                        <li class="nav-link position-relative p-0" [ngClass]="{'active': activeLink === 'Blogs'}">
+                        
+                            <a class="nav-link" [ngClass]="{'active': activeLink === 'Blogs'}" (click)="setActive('Blogs'); toggleNavbar()"
+                                href="#blog">
+                                Blog
+                            </a>
+                        
+                        
+                        </li>
 
             </div>
 
